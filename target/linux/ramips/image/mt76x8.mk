@@ -359,6 +359,18 @@ define Device/tplink_tl-wa801nd-v5
 endef
 TARGET_DEVICES += tplink_tl-wa801nd-v5
 
+define Device/tplink_tl-wa850re-v4
+  $(Device/tplink-v1)
+  DEVICE_MODEL := TL-WA850RE
+  DEVICE_VARIANT := v4
+  DEVICE_PACKAGES :=
+  IMAGE_SIZE := 3712k
+  TPLINK_HWID := 0
+  TPLINK_FLASHLAYOUT := 4Mlzma
+  IMAGES := factory.bin sysupgrade.bin
+endef
+TARGET_DEVICES += tplink_tl-wa850re-v4
+
 define Device/tplink_tl-wr802n-v4
   $(Device/tplink-v2)
   IMAGE_SIZE := 7808k
